@@ -30,6 +30,17 @@ public class CoreJavaBrushUp1 {
 			System.out.println(arr[i]);
 		}
 		
+		// Enhanced for loop
+		String[] names = {"Bipul", "Madhu", "Bunu", "Nanu", "Oggy"}; 
+		System.out.println("Enhanced for loop");
+		for (String s:names) {;
+			System.out.println(s);
+		}
+		
+		for(int i:arr) {
+			System.out.println(i);
+		}
+		
 	}
 
 }
