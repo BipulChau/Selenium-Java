@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class CoreJavaBrushUp2 {
 
@@ -13,7 +14,15 @@ public class CoreJavaBrushUp2 {
 				System.out.println(i + " is not an even number");
 			}
 		}
-
+		
+		// Arraylist
+		System.out.println("ArrayList: ");
+		ArrayList<String> a = new ArrayList<String>();
+		a.add("Oggy");
+		a.add("Bune");
+		a.add("Nane");
+		a.add("Aama");
+		System.out.println(a.get(3));
 	}
 
 }
