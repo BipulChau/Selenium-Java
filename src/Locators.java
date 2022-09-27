@@ -9,7 +9,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Locators {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
@@ -21,6 +21,12 @@ public class Locators {
 		
 		//css selector
 		System.out.println(driver.findElement(By.cssSelector("p.error")).getText());
+		
+		//link text
+
+		driver.findElement(By.linkText("Forgot your password?")).click();
+		Thread.sleep(5000);
+		driver.close();
 		
 
 	}
